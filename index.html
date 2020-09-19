@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles/reset.css" type="text/css">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+  </head>
+  <body>
+    <img class="logo" src="images/europa-bank-logo.svg" alt="Europa logo">
+    <div class="container">
+      <form id="survey-form">
+
+        <!-- Header -->
+        <header class="header">
+          <h1 id="title">Survey Form</h1>
+          <p id="description">Let us know how we can improve our products and services.</p>
+        </header>
+
+        <!-- Main Field -->
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="age">Age (optional)</label>
+          <input type="number" class="form-control" id="number" min="1" max="125" placeholder="Enter your age">
+        </div>
+
+        <!-- Dropdown -->
+        <div class="form-group">
+          <p> Which type of account do you currently have with us?</p>
+          <select id="dropdown" class="form-control">
+            <option selected>Select an option</option>
+            <option value="1">Current account</option>
+            <option value="2">Savings account</option>
+            <option value="3">Brokerage account</option>
+            <option value="4">More than one account</option>
+          </select>
+        </div>
+        
+        <!-- Radios -->
+        <div class="form-group">
+          <p>How likely would you recommend our products and services to a friend or family?</p>
+          <div>
+            <input type="radio" name="radio-button" value="option1" checked>
+            <label for="radio-button-1">Definitely</label>
+          </div>
+
+          <div>
+            <input type="radio" name="radio-button" value="option2">
+            <label for="radio-button-2">Maybe</label>
+          </div>
+
+          <div>
+            <input type="radio" name="radio-button" value="option3" >
+            <label for="radio-button-3">Not sure</label>
+          </div>
+        </div>
+
+        <!-- Dropdown -->
+        <div class="form-group">
+          <p> How would you rate the overall quality of our products and services?</p>
+          <select id="dropdown" class="form-control">
+            <option selected>Select an option</option>
+            <option value="1">Excellent</option>
+            <option value="2">Good</option>
+            <option value="3">Poor</option>
+            <option value="4">Prefer not to say</option>
+          </select>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="form-group">
+          <p>Which of our branch you visited recently?</p>                
+          <div>
+            <input type="checkbox" value="6">
+            <label for="checkbox-6">Frankfurt</label>
+          </div>
+
+          <div>
+            <input type="checkbox" value="7">
+            <label for="checkbox-7">Zurich</label>
+          </div>
+
+          <div>
+            <input type="checkbox" value="8">
+            <label for="checkbox-8">Vienna</label>
+          </div>
+
+          <div>
+            <input type="checkbox" value="9">
+            <label for="checkbox-9">Amsterdam</label>
+          </div>
+
+          <div>
+            <input type="checkbox" value="10">
+            <label for="checkbox-10">Brussel</label>
+          </div>
+        </div>
+
+        <!-- Comment box -->
+        <div class="form-group">
+          <label for="validation-textarea">Please provide any additional comments or suggestions you may have:</label>
+          <textarea class="form-control" placeholder="Enter your comment here..." required></textarea>
+        </div>
+
+        <!-- Submit -->
+        <div class="form-group">
+          <button id="submit" type="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+    </div><!-- div container -->
+
+    <!-- Footer -->
+    <footer class="copyright"><p>© 2020 Europa Bank. All Rights Reserved.</p></footer>
+  </body>
+</html>
