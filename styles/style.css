@@ -1,7 +1,7 @@
 html, body {
   background-color: #2A3EB2;
   font-family: 'Noto Sans', arial, sans-serif;
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0 2rem;
 }
 
@@ -18,10 +18,10 @@ html, body {
 .container {
   background-color: white;
   margin: auto;
-  margin-bottom: 70px;
-  border-radius: 4px;
-  max-width: 750px;
-  padding: 20px;
+  margin-bottom: 4.375rem;
+  border-radius: 0.25rem;
+  max-width: 46.875rem;
+  padding: 1.25rem;
 }
 
 /* Header  */
@@ -36,7 +36,7 @@ h1 {
   margin-top: 1rem;
 }
 
-#description {
+.description {
   margin-top: 1rem;
 }
 
